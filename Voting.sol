@@ -10,8 +10,7 @@ contract Voting {
     uint NumberOfCandidates;
     struct Voter{
         uint weight; // weight is accumulated by delegation or if they have right to vote
-        bool voted;  // if true, that person already voted
-        address delegate; // person delegated to
+        bool voted;  // if true, that person already vote
         uint vote;   // index of the voted proposal
     }
 
